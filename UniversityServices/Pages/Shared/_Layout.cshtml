@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Университеты</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/UniversityServices.styles.css" asp-append-version="true" />
+
 </head>
 <body>
     <header>
@@ -22,16 +23,16 @@
                         <li class="nav-item dropdown">
                             <a class ="nav-link text-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" asp-area="">Списки</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-page="/ListStudent">Списки студентов</a></li>
-                                <li><a class="dropdown-item" asp-page="/ListTeacher">Списки преподавателей</a></li>
+                                <li><a class="dropdown-item" asp-page="/ListTeacher">Преподавателей</a></li>
+                                <li><a class="dropdown-item" asp-page="/ListStudent">Студентов</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" asp-area="">Домашняя</a>
+                            <a class="nav-link text-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" asp-area="">Добавить</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" asp-page="/AddUniversity">Университет</a></li>
+                                <li><a class="dropdown-item" asp-page="/AddTeacher">Преподавателя</a></li>
+                                <li><a class="dropdown-item" asp-page="/AddStudent">Студента</a></li>
                             </ul>
                         </li>
 

@@ -1,4 +1,25 @@
 ﻿@page
 @model UniversityServices.Pages.AddUniversityModel
 @{
+	ViewData["Title"] = "Добавление Университета";
 }
+<body>
+	<div class="d-flex justify-content-center">
+		<button type="button" class="btn btn-dark ">Выбрать здание</button>
+		<div class="input-group input-group-lg px-3">
+			<span class="input-group-text" id="inputGroup-sizing-lg">Название:</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+		</div>
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown">
+				Факультеты
+			</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+

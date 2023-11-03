@@ -2,8 +2,3 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-
-function redirectFunc(https://google.com) {
-    var btn = document.getElementById("btnRef")
-
-}

@@ -6,13 +6,9 @@ namespace UniversityServices
     {
         public int Id { get; set; }
         public string? Name { get; set; }
+        public int FacultyId { get; set; }
     }
-    public class Faculty
-    {
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public int UniversityId { get; set; }
-    }
+
     public class Resident
     {
         public int Id { get; set; }

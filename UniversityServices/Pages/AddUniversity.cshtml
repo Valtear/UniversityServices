@@ -4,31 +4,36 @@
 	ViewData["Title"] = "Добавление Университета";
 }
 <body>
-	<form method="post" enctype="multipart/form-data>
-		<div class="d-flex justify-content-center">
-			<div class="p-3 d-flex justify-content-center">
-				<button id="btnRef" OnClientClick.onclick="redirectFunc(this.src)" type="button" class="btn btn-dark">Выбрать здание</button>
-				<div class="input-group input-group-default px-3">
-					<span class="input-group-text" id="inputGroup-sizing-default">Название:</span>
-					<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-				</div>
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle btn-dark h-100" type="button" data-bs-toggle="dropdown">
-						Факультеты
-					</button>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Action</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
-						<li><a class="dropdown-item" href="#">Something else here</a></li>
-					</ul>
-				</div>
-
-			</div>
-			<div class="p-3 d-flex justify-content-center">
-				<button type="button" class="btn btn-dark h-100 w-25p mt-3">Добавить</button>
-			</div>
+	<div class="p-3 d-flex justify-content-center">
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown">
+				Выбрать здание
+			</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+			</ul>
 		</div>
-	</form>
+		<div class="input-group input-group-default px-3">
+			<span class="input-group-text" id="inputGroup-sizing-default">Название:</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+		</div>
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown">
+				Факультеты
+			</button>
+			<ul class="dropdown-menu">
+				@foreach()
+				{
+					<li><a class="dropdown-item" href="#">Action</a></li>
+				}
+			</ul>
+		</div>
+	</div>
+	<div class="p-3 d-flex justify-content-center">
+		<form method="post " enctype="multipart/form-data">
+			<button type="submit" class="btn btn-dark w-25p mt-3">Добавить</button>
+		</form>
+	</div>
 
 </body>
 
